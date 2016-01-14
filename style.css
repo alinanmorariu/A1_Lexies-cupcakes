@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+  background: url(img/background_1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+#wrapper {
+    margin: inherit;
+    max-width: 960px;
+}
+
+#logo {
+    margin: inherit;
+    text-align: center;
+}
+
+#menu {
+    display: table;
+    list-style: none;
+    margin-top: 0;
+    -webkit-padding-start: 0px;
+}
+
+#menu li { 
+    color: #ffffff;
+    display: table-cell;
+    padding: 6px 6px 2px 6px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 15%;
+}
+
+#menu li:last-child {
+    width: 18%;
+}
+
+#menu li:first-child {
+    width: 8%;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+
+.selected {
+    background: rgba(115, 51, 163, 1);
+}
+
+.not-selected {
+    background: rgba(115, 51, 163, 0.36);
+}
+
+footer {
+    background: rgba(115, 51, 163, 0.36);
+    color: #fff;
+    font-size: 0.9em;
+    overflow: hidden;
+}
+
+footer section {
+    clear: both;
+    padding: 16px;
+    text-align: center;
+}
+    
+#first-footer-section, #second-footer-section, #third-footer-section {
+    width: 100%;
+}
+
+.info {
+    border-top: 1px dotted #fff;
+    border-bottom: 1px dotted #fff;
+    padding: 16px;
+}
+
+.contact-number {
+    font-weight: 600;
+}
+
+footer p {
+    line-height: 2em;
+    margin-top: 2px;
+}
+
+.social-media-link {
+    margin-right: 4px;
+}
+
+.info>div {
+     padding: 0 20px;
+}
+
+
+@media only screen and (min-width: 480px) { 
+    footer section {
+        float: left;
+        clear: none;
+    }
+
+    #first-footer-section, #third-footer-section {
+        width: 25%;
+
+    }
+
+    #second-footer-section {
+        width: 50%;
+    }
+
+    .info {
+        border-left: 1px dotted #fff;
+        border-right: 1px dotted #fff;
+        border-top: 0;
+        border-bottom: 0;
+        min-height: 100px;
+        padding: 0;
+    }
+}
+
+/*    ---------------------- MAIN CONTENT STYLES ----------- */ 
