@@ -132,3 +132,46 @@ footer p {
 }
 
 /*    ---------------------- MAIN CONTENT STYLES ----------- */ 
+
+#cupcakes-content {
+    margin: 20px 0;
+}
+
+.details-container {
+    background-image: url('img/cherry_cupcake.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.details {
+    background: rgba(115, 51, 163, 0);
+    color: #fff;
+    padding: 9% 12% 11% 12%;
+    text-align: center;
+    transition: background 0.5s ease-out;
+    visibility: hidden;
+}
+
+.details-container:hover .details{
+    background: rgba(115, 51, 163, 0.36);
+    visibility: visible;
+}
+
+div.details:hover {
+    display: block;
+}
+
+.details p span, .price {
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 641px) {
+    .details-container {
+        width: 60%;
+    }
+}
+
+
+
+
