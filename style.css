@@ -134,13 +134,17 @@ footer p {
 /*    ---------------------- MAIN CONTENT STYLES ----------- */ 
 
 #cupcakes-content {
+    clear: both;
     margin: 20px 0;
+    overflow: hidden;
 }
 
 .details-container {
     background-image: url('img/cherry_cupcake.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    float:left;
+    margin-right: 20px;
     width: 100%;
 }
 
@@ -166,9 +170,19 @@ div.details:hover {
     font-weight: bold;
 }
 
+.detailed-image-container {
+    float: left;
+    visibility: hidden;
+    width: 36%;
+}
+
 @media only screen and (min-width: 641px) {
     .details-container {
         width: 60%;
+    }
+    
+    .detailed-image-container {
+        visibility: visible;
     }
 }
 
